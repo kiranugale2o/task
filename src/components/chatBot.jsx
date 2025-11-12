@@ -35,7 +35,6 @@ const ChatBot = () => {
     }
   };
 
-  // Auto scroll to bottom
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
@@ -109,21 +108,21 @@ const styles = {
     fontFamily: "Poppins, sans-serif",
     background: "linear-gradient(135deg, #eef2ff, #f9faff)",
     minHeight: "100vh",
+    height: "100vh",          // full viewport height
     display: "flex",
-    // justifyContent: "center",
-    // alignItems: "center",
-  
-  },
+    justifyContent: "center", // horizontally center
+    alignItems: "stretch",    // stretch to full height
+},
   chatContainer: {
     width: "100%",
     maxWidth: "600px",
     display: "flex",
     flexDirection: "column",
     height: "80vh",
-    // borderRadius: "16px",
-    // boxShadow: "0 8px 25px rgba(0,0,0,0.15)",
     overflow: "hidden",
     backgroundColor: "#ffffff",
+    borderRadius: "16px",
+    boxShadow: "0 8px 25px rgba(0,0,0,0.15)",
   },
   chatBox: {
     flex: 1,
@@ -163,7 +162,7 @@ const styles = {
   },
   input: {
     flex: 1,
-    minWidth: "0", // ensures it shrinks properly
+    minWidth: "0",
     padding: "10px 12px",
     borderRadius: "10px",
     border: "1px solid #ccc",
@@ -171,7 +170,7 @@ const styles = {
     outline: "none",
   },
   button: {
-    flex: "0 0 auto", // button size fixed, doesn't shrink
+    flex: "0 0 auto",
     padding: "10px 20px",
     borderRadius: "10px",
     border: "none",
