@@ -17,7 +17,7 @@ const ChatBot = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post("http://localhost:3000/chat", {
+      const response = await axios.post("https://taskbackend-eight.vercel.app/chat", {
         message: input,
       });
 

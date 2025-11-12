@@ -29,7 +29,7 @@ const VendorList = () => {
 
   return (
     <div style={styles.container}>
-      <h2 style={styles.title}>Vendor Directory</h2>
+      <h2 style={styles.title}>Vendor Filter Task</h2>
 
       {/* Filter Bar */}
       <div style={styles.filterBar}>

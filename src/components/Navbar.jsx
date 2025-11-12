@@ -5,12 +5,8 @@ const Navbar = () => {
   return (
     <header style={styles.header}>
       <div style={styles.logoSection}>
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/25/25694.png"
-          alt="Logo"
-          style={styles.logo}
-        />
-        <h1 style={styles.title}>Task</h1>
+      
+        <h1 style={styles.title}>Assignment Task</h1>
       </div>
 
       <nav style={styles.nav}>
@@ -18,6 +14,7 @@ const Navbar = () => {
   <Link to="/chatbot" style={styles.link}>AI Chat</Link>
   <Link to="/jobportal" style={styles.link}>Job Portal</Link>
   <Link to="/collegeevent" style={styles.link}>College Events Portal</Link>
+
       </nav>
 
     
@@ -27,7 +24,7 @@ const Navbar = () => {
 
 const styles = {
   header: {
-    background: "linear-gradient(90deg, #1e3c72, #2a5298)",
+    background: "linear-gradient(90deg, #1e725cff, #2a9886ff)",
     color: "white",
     padding: "0.8rem 2rem",
     display: "flex",
