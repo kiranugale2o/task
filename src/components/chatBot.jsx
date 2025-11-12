@@ -110,9 +110,9 @@ const styles = {
     background: "linear-gradient(135deg, #eef2ff, #f9faff)",
     minHeight: "100vh",
     display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    padding: "1rem",
+    // justifyContent: "center",
+    // alignItems: "center",
+  
   },
   chatContainer: {
     width: "100%",
@@ -120,8 +120,8 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     height: "80vh",
-    borderRadius: "16px",
-    boxShadow: "0 8px 25px rgba(0,0,0,0.15)",
+    // borderRadius: "16px",
+    // boxShadow: "0 8px 25px rgba(0,0,0,0.15)",
     overflow: "hidden",
     backgroundColor: "#ffffff",
   },

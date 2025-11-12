@@ -39,7 +39,7 @@ const styles = {
   },
   main: {
     flex: 1,
-    padding: "1.5rem",
+   
     overflowY: "auto",
   },
 };
